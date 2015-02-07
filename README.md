@@ -65,7 +65,7 @@ Running the R scripts
 ----------
 For proper execution, the unzipped file "household_power_consumption.txt" must be saved in your system's working directory.
 
-If the script files "Plot1-4.R" are also saved in your system's working directory, they can be run by substituting the plot reference number (1-4) for the "x" in the filename "Plotx.png" and entering the following command at the R console prompt.
+If the script files "Plot1-4.R" are also saved in your system's working directory, they can be run by substituting the plot reference number (1-4) for the "x" in the filename "Plotx.R" and entering the following command (replacing Plotx.R with the changed filename) at the R console prompt.
 >    source("./Plotx.R")
 
 If the "Plot1-4.R" files are saved elsewhere, put the R script's fully-qualified file string into the source() command above, add a setwd() in the R script or load the script into RStudio and run it using RStudio functions. 
