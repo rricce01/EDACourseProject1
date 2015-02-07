@@ -63,7 +63,7 @@ if (sum(plot_data[,"Sub_metering_3"]=="?") == TRUE) {
 ###   open png file as graphics device
 #
 if (file.exists("./plot3.png")) file.remove("./plot3.png")
-png("plot3.png", height = 480, width = 480, bg = "transparent")
+png("plot3.png", height = 480, width = 480, bg = "white")
 
 #
 ###   plot data values as line
@@ -71,7 +71,8 @@ png("plot3.png", height = 480, width = 480, bg = "transparent")
 with(plot_data, plot(Time, Sub_metering_1, type="n",
    ylab ="Energy sub metering",
    xlab ="",
-   font.main = 2))
+   font.main = 2,
+   bg = "white"))
 with(plot_data, lines(Time, Sub_metering_1, col="black"))
 with(plot_data, lines(Time, Sub_metering_2, col="red"))
 with(plot_data, lines(Time, Sub_metering_3, col="blue"))

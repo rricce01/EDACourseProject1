@@ -58,14 +58,15 @@ plot_data$Time <- strptime(timeStamps, format = "%Y-%m-%d %H:%M:%S", tz="")
 ###   open png file as graphics device
 #
 if (file.exists("./plot2.png")) file.remove("./plot2.png")
-png("plot2.png", height = 480, width = 480, bg = "transparent")
+png("plot2.png", height = 480, width = 480, bg = "white")
 
 #
 ###   plot values as line
 #
 with(plot_data, plot(Time, Global_active_power, type="n",
    ylab ="Global Active Power (kilowatts)",
-   xlab = ""))
+   xlab = "",
+   bg = "white"))
 with(plot_data, lines(Time, Global_active_power))
 
 #

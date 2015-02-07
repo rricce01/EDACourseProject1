@@ -65,7 +65,7 @@ if (sum(plot_data[,"Sub_metering_3"]=="?") == TRUE) {
 ###   open png file as graphics device
 #
 if (file.exists("./plot4.png")) file.remove("./plot4.png")
-png("plot4.png", height = 480, width = 480, bg = "transparent")
+png("plot4.png", height = 480, width = 480, bg = "white")
 
 #
 ###   set up 2x2 plot panes
@@ -76,7 +76,8 @@ par(mfrow = c(2,2))
 #
 with(plot_data, {plot(Time, Global_active_power, type="n",
                      ylab ="Global Active Power",
-                     xlab ="")
+                     xlab ="",
+                     bg = "white")
                  lines(Time, Global_active_power)
      
 #
@@ -84,7 +85,8 @@ with(plot_data, {plot(Time, Global_active_power, type="n",
 #
                  plot(Time, Voltage, type="n",
                      ylab ="Voltage",
-                     xlab ="datetime")
+                     xlab ="datetime",
+                     bg = "white")
                  lines(Time, Voltage, col="black")
 
 #
@@ -92,7 +94,8 @@ with(plot_data, {plot(Time, Global_active_power, type="n",
 #
                 plot(Time, Sub_metering_1, type="n",
                     ylab ="Energy sub metering",
-                    xlab ="")
+                    xlab ="",
+                    bg = "white")
                 lines(Time, Sub_metering_1, col="black")
                 lines(Time, Sub_metering_2, col="red")
                 lines(Time, Sub_metering_3, col="blue")
@@ -106,7 +109,8 @@ with(plot_data, {plot(Time, Global_active_power, type="n",
 #
                 plot(Time, Global_reactive_power, type="n",
                     ylab ="Global_reactive_power",
-                    xlab ="datetime")
+                    xlab ="datetime",
+                    bg = "white")
                 lines(Time, Global_reactive_power, col="black")
 
 })

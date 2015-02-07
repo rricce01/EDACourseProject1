@@ -48,7 +48,7 @@ plot_data <- plot_data[(plot_data$Date == date1 | plot_data$Date == date2), ]
 ###   open png file as graphics device
 #
 if (file.exists("./plot1.png")) file.remove("./plot1.png")
-png("plot1.png", height = 480, width = 480, bg = "transparent")
+png("plot1.png", height = 480, width = 480, bg = "white")
 
 #
 ###   plot values as histogram
@@ -56,7 +56,8 @@ png("plot1.png", height = 480, width = 480, bg = "transparent")
 hist(as.numeric(plot_data$Global_active_power), 
      col = "red", 
      main = "Global Active Power", 
-     xlab ="Global Active Power (kilowatts)")
+     xlab ="Global Active Power (kilowatts)",  
+     bg = "white")
          
 #
 ###   close device to save plot as .png file
