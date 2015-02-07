@@ -22,7 +22,7 @@ Project overview
 ----------
 This course project consists of using using R Base Graphics to create replicas of example plots of various subsets of a dataset containing measurements of a household's electric power consumption over time. This is accomplished via use of an R script to input, process and plot the data, and by posting documentation including the output files, R scripts to produce them and other relevant information, for peer review on GitHub.
 
-Full details and assignment instruction are available from the [project GitHub repo.](https://github.com/rdpeng/ExData_Plotting1)
+Full details and assignment instructions are available from the [project GitHub repo.](https://github.com/rdpeng/ExData_Plotting1)
 
 
 Outcome summary
@@ -49,16 +49,16 @@ The following files are available on my [public GitHub repository](https://githu
 
 Starting Point
 ----------
-Project input is a set of measurements of an individual household's electric power consumption over time, collected over a period of four years, plus descriptions of the collection process, formats and meaning of the measured data elements.
+Project input is a set of measurements of an individual household's electric power consumption, collected over a period of four years, plus descriptions of the collection process, formats and interpretation of the measured data elements.
 
-The data package was obtained from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html) by class faculty and posted for download by the class on [this page](https://github.com/rdpeng/ExData_Plotting1). 
+The data package was obtained from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html) by class faculty and posted for download by the class [here](https://github.com/rdpeng/ExData_Plotting1). 
 
 
 Input Package
 ----------
-The data downloads as "exdata_data_household_power_consumption.zip". The unzipped file, "household_power_consumption.txt" contains the sampled power consumption measurements over a period of approximately four years. 
+The data downloads as "exdata_data_household_power_consumption.zip". The unzipped file, "household_power_consumption.txt" contains the sampled power consumption measurements data. 
 
-This dataset is used as input by the "Plot1-4.R" scripts. 
+This data is used as input by the "Plot1-4.R" scripts. 
 
 
 Running the R scripts  
